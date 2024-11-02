@@ -44,20 +44,6 @@ script.js
 Contém o código JavaScript para:
 - Funções de navegação no slider de depoimentos de clientes.
 
-## Como Usar
-
-1. Clone o repositório:
-   bash
-   git clone https://github.com/seu-usuario/sorriso-perfeito.git
-   
-2. Abra o arquivo `index.html` em um navegador para visualizar o site.
-
-*Tecnologias Utilizadas*
-
-- HTML5
-- CSS3
-- JavaScript
-
 *Contato*
 
 Caso tenha dúvidas ou sugestões, entre em contato:
