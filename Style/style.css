@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #004680;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+header .logo img {
+    width: 200px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 5;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 10px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicos .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.servicos h2 {
+    color: #0077cc;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.grid-servicos p {
+
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+
+}
+
+.card-servicos {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-servicos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-servicos h3 {
+    margin-top: 20px;
+    color: #0077cc;
+    margin-bottom: 30px;
+}
+
+/*Sorriso*/
+.sorrisso .container {
+    max-width: 50px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+
+}
+
+.sorrisso h2 {
+
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.sorrisso img {
+    max-width: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.slide p {
+    color: rgb(134, 133, 133);
+    font-size: 25px;
+
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    transition: transform 0.5s ease;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.prev-button,
+.next-button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin: 0 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #005fa3;
+}
+
+/*seção formulario*/
+section.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.container-formulario {
+    text-align: center;
+    padding: 20px;
+    width: 400px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.formulario {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--cor-box-shadow);
+    display: inline-block;
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario button {
+    background-color: #0077cc;
+    color: var(--cor-fundo);
+    border: #004680;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formulario button:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+
+.sobre .container {
+    flex: 2;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sobre h2 {
+    color: #0077cc;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sobre,
+.novidades {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sobre .container,
+.novidades .container-formulario {
+    flex: 1;
+    margin: 20px;
+}
+
+
+footer {
+    background-color: #0077cc;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer .info-contato p,
+footer .redes-sociais a {
+    color: #fff;
+}
+
+footer .redes-sociais a {
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+footer .redes-sociais img {
+    width: 24px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.sorrisso img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 375px) and (max-height: 667px) {
+
+    /* Geral */
+    body {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    /* Header */
+    header {
+        flex-direction: column;
+        padding: 10px 5px;
+        text-align: center;
+    }
+
+    header .logo img {
+        width: 120px;
+
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        margin: 8px 0;
+    }
+
+    /* Navegação */
+    .nav-links {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    /* Seção Serviços */
+    .servicos .container {
+        padding: 5px;
+    }
+
+    .grid-servicos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Cartões de Serviços */
+    .card-servicos {
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px 0;
+    }
+
+    .card-servicos img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .card-servicos h3 {
+        font-size: 1.1rem;
+        margin: 8px 0;
+    }
+
+    .card-servicos p {
+        font-size: 0.9rem;
+    }
+
+    /* Seção Clientes */
+    .sorriso .container {
+        padding: 5px;
+    }
+
+    .slider {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .slide img {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .button-container {
+        flex-direction: row;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .prev-button,
+    .next-button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* Seção Sobre Nós */
+    .sobre .container {
+        padding: 10px;
+    }
+
+    .sobre img {
+
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .sobre h2 {
+        font-size: 1.5rem;
+    }
+
+    .sobre p {
+        font-size: 0.9rem;
+    }
+
+    /* Formulário */
+    .container-formulario {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .formulario {
+        padding: 10px;
+    }
+
+    .formulario h1 {
+        font-size: 1.3rem;
+    }
+
+    .formulario input,
+    .formulario button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+    }
+
+    footer .info-contato p,
+    footer .redes-sociais a {
+        font-size: 0.9rem;
+    }
+
+    footer .redes-sociais {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    footer .redes-sociais img {
+        width: 20px;
+    }
+
+    .sorrisso img {
+        max-width: 100%;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+    }
+
+
+
+    @media (max-width: 600px) {
+
+        .container {
+            margin: 0 auto;
+            padding: 10px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .container {
+            height: 60vh;
+        }
+
+        .container-formulario {
+            width: 280px;
+        }
+
+        .formulario button {
+            font-size: 14px;
+            padding: 8px;
+        }
+
+        .sobre,
+        .novidades {
+            flex-direction: column;
+        }
+    }
+}
